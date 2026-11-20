@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head><!-- The head is a container for information ABOUT the page.
+           Nothing in here appears on the page. The browser reads it, the visitor never sees it. -->
+
+	<!-- Which character set to use. Leave this out and apostrophes turn into garbage. -->
+	<meta charset="utf-8">
+	<!-- Tells a phone to use its real width instead of pretending to be a desktop. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The browser tab text, and what Google shows in search results. Not a heading on the page. -->
+	<title>About | Rise Coffee</title>
+
+	<!-- STYLES -->
+	<!-- STEP 1: your two stylesheet links go here -->
+
+
+	<link rel="stylesheet" href="normalize.css"> <!-- This is to NORMALIZE browser default -->
+	<link rel="stylesheet" href="layout.css">  <!-- This controls our structure and LAYOUT -->
+	<link rel="stylesheet" href="style.css">  <!-- This is to where we add all the STYLING to the elements of the page -->
+
+
+	<!-- FONTS -->
+	<!-- STEP 2: your Google Fonts links go here -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body><!-- The body holds everything the visitor actually SEES. -->
+
+	<!-- HEADER: the strip along the top. It is the same on every page of the site,
+	     which is why it lives outside <main>. -->
+	<header>
+		<!-- LOGO -->
+		<a href="index.html"><img src="images/rise-logo.svg" class="logo" alt="rise logo"></a>
+
+		<!-- NAVIGATION: a menu is a LIST of related links, so it is marked up as a ul with li inside.
+		     CSS takes the bullets off later, but underneath it stays a list, because that is what it is. -->
+		<nav>
+			<ul>
+				<li><a class = "nav-link" href="index.html">Home</a></li>
+				<li><a class = "nav-link" href="about.html">About</a></li>
+				<li><a class = "nav-link" href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- The # in this href jumps to the element with id="visit" further down THIS page,
+		     instead of opening a different page. -->
+		<a class="button nav-link" href="index.html#visit">Visit Us</a>
+		<div class="hamburger">
+			<div class="hamburger-bar"></div>
+			<div class="hamburger-bar"></div>
+			<div class="hamburger-bar"></div>
+		</div>
+	</header>
+
+	<!-- MAIN: everything between the header and the footer. This is the part that is
+	     actually THIS page. One <main> per page. -->
+	<main>
+
+		<!-- SECTION: one horizontal band of the page. Look at the mockup: every time the
+		     background colour changes, a new section starts. This page has five. -->
+
+		<!-- HERO SECTION: the first thing a visitor sees. -->
+		<section class="section-padding" >
+
+			<div class="container">
+				<div class="row">
+					<div class="col col-lg-12 col-md-12 col-sm-12">
+						<h1 class="text-maroon text-center">about us</h1>
+					</div>
+				</div>
+			
+				<div class="row">
+					<div class="col col-lg-12 col-md-12 col-sm-12">
+						<div class="about-hero-img">
+							<img src="images/rise-icon-3.svg" class="about-icon" alt="rise icon">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- OUR STORY SECTION: gold band in the mockup.
+		     Notice the markup is identical to the section above. Only the CSS will differ. -->
+		<section class="section-padding background-gold position-relative">
+			<img src="images/gradient-1.png" class="gradient-1" alt="">
+			<!-- ROW -->
+			<div class="container z-index-2">
+				<div class="row row-allign-center">
+					<div class="col col-lg-8 col-md-12 col-sm-12">
+						<h2 class="text-maroon">our story</h2>
+										
+						<p>Rise Coffee began as a pop-up espresso cart in 2016, run by Jenny & Mark who believed mornings deserved better. What started with a borrowed machine and a handful of regulars has grown into a community hub where great coffee meets genuine connection. We’ve stayed true to our roots: small-batch roasting, a love for craft, and a commitment to keeping coffee approachable.</p>
+					</div>
+
+					<div class="col col-lg-4 col-md-6 col-sm-12">
+						<div class="card-img-wrap">
+							<img src="images/rise-coffee-7.jpg" class="card-img" alt="jenny and mark out on a run">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+		<!-- OUR VALUES SECTION: the three cards.
+		     Look at columns 1, 2 and 3 below. They are the SAME block written three times
+		     with different words. Write one, get it right, then copy it. -->
+		<section class="section-padding">
+			
+			<!-- ROW -->
+			<div class="container">
+				<div class="row">
+					<div class="col col-lg-12 col-md-12 col-sm-12 text-center">
+						<h2 class="text-maroon">our values</h2>
+					</div>
+				</div>
+
+				<!-- ROW -->
+				<div class="row">
+					<!-- COLUMN 1-->
+					<div class="col col-lg-4 col-md-6 col-sm-12 text-center">
+						<img src="images/people-icon.svg" alt="people icon" >
+						<h3 class="text-maroon">community first</h3>
+						<p>Coffee is more than a drink; it’s a way to bring people together.</p>
+						<div class="card-border-single"></div>
+
+					</div>
+
+					<!-- COLUMN 2 -->
+					<div class="col col-lg-4 col-md-6 col-sm-12 text-center">
+						<img src="images/heart-icon.svg" alt="heart icon" >
+						<h3 class="text-maroon">care over pretension</h3>
+						<p>We source responsibly and roast with care, but keep the vibe laid-back and welcoming.</p>
+						<div class="card-border-single"></div>
+					</div>
+
+					<!-- COLUMN 3 -->
+					<div class="col col-lg-4 col-md-6 col-sm-12 text-center">
+						<img src="images/leaf-icon.svg" alt="leaf icon" >
+						<h3 class="text-maroon">sustainability always</h3>
+						<p>From cups to direct-trade partnerships, we believe every choice matters.</p>
+						<div class="card-border-single"></div>
+					</div>
+				</div>
+
+			<!-- ROW -->
+
+			<div class="row row-allign-center">
+				<div class="col col-lg-6 col-md-12 col-sm-12">
+					<div class="card-img-wrap-big">
+						<img src="images/rise-coffee-8.jpg" class="card-img" alt="people enjoying each others company">
+					</div>
+				</div>				
+				<div class="col col-lg-6 col-md-12 col-sm-12">
+					<h2 class="text-maroon">events at rise</h2>
+
+					<div class="text-grey">
+						<p>Looking for a space with good energy (and even better coffee)? Our café is available for community gatherings, art shows, live music, workshops, and private events. Whether you’re planning an intimate reading or a lively launch party, we’ve got the space — and, of course, the coffee.</p>
+					</div>
+					<div>
+						<a class="button-secondary" href="contact.html">Inquire now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+
+
+		<!-- MORE THAN A CAFE SECTION.= -->
+		<section class="section-padding background-gold position-relative">
+			<img src="images/gradient-1.png" class="gradient-1" alt="">
+			<div class="container z-index-2">
+				<!-- ROW -->
+				<div class="row row-allign-center">
+					<div class="col col-lg-6 col-md-12 col-sm-12">
+						<div>
+							<h2 class="text-maroon">more than a cafe</h2>
+						</div>
+						<div>
+							<p class="text-grey">We’re proud to support local artists, host open mic nights, and partner with neighborhood nonprofits. When you visit Rise Coffee, you’re not just grabbing a latte — you’re plugging into a space that celebrates creativity, connection, and community.</p>
+						</div>
+					</div>
+					<div class="col col-lg-6 col-md-12 col-sm-12">
+						<div class="card-img-wrap-big">
+							<img src="images/rise-coffee-3.jpg" class="card-img" alt="coffee cup on a bar counter">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- TESTIMONIALS SECTION: maroon band in the mockup. -->
+		<section class="section-padding background-maroon text-white">
+			<div class="container testimonial">
+				<div class="row row-justify-center">
+					<img src="images/rise-icon-2.svg" class="rise-burst" alt="">
+				</div>
+				<div class="row row-justify-center text-center">
+					<h2>what our regulars are saying...</h2>
+				</div>
+				<div class="row row-justify-center text-center">
+					<h3><em>“Perfect spot for studying. Great coffee and even better vibes”</em></h3>
+				</div>
+				<div class="row row-justify-center text-center">
+					<p><strong>— Miguel R.</strong></p>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+
+	<!-- FOOTER -->
+	<footer class="section-padding background-maroondark text-white">
+
+		<div class="container">
+			<div class="row">
+				<div class="col col-lg-3 col-md-6 col-sm-12">
+					<a href="index.html"><img src="images/rise-logo.svg" class="img-full" alt="rise logo"></a>
+					<p>© 2025 Rise Coffee</p>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Terms</a>
+				</div>
+
+				<div class="col col-lg-3 col-md-6 col-sm-12">
+				</div>
+				
+				<div class="col col-lg-3 col-md-6 col-sm-12">
+					<h3>Get in Touch</h3>
+					<p><img src="images/phone-icon.svg" class="footer-icon" alt="">780-939-5224</p>
+					<p><img src="images/mail-icon.svg" class="footer-icon" alt="">hello@risecoffee.com</p>
+					<p><img src="images/location-icon.svg" class="footer-icon" alt="">304 Main St<br>Wellington, ON  K0K 3L0</p>
+				</div>
+
+				<div class="col col-lg-3 col-md-6 col-sm-12">
+					<h3>Hours</h3>
+					<ul class="hours-list">
+						<li>Monday: <strong>7am - 5pm</strong></li>
+						<li>Tuesday: <strong>7am - 5pm</strong></li>
+						<li>Wednesday: <strong>7am - 5pm</strong></li>
+						<li>Thursday: <strong>7am - 7pm</strong></li>
+						<li>Friday: <strong>7am - 5pm</strong></li>
+						<li>Saturday: <strong>9am - 5pm</strong></li>
+						<li>Sunday: <strong>9am - 3pm</strong></li>
+	  				</ul>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+</body>
+</html>
